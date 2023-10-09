@@ -13,7 +13,7 @@
   "author": "roman",
   "license": "ISC",
   "engines": {
-    "node": ">=16.0.0 <19.0.0"
+    "node": "18.x"
   },
   "dependencies": {
     "@koa/cors": "^4.0.0",
