@@ -1,0 +1,27 @@
+{
+  "name": "hw-8_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "pm2 start server.js --watch --no-daemon --name \"HW-chat\"",
+    "watch": "pm2 start server.js --watch --no-daemon --name \"HW-chat\"",
+    "stop": "pm2 stop \"HW-chat\"",
+    "list": "pm2 list"
+  },
+  "author": "roman",
+  "license": "ISC",
+  "engines": {
+    "node": ">=16.0.0 <19.0.0"
+  },
+  "dependencies": {
+    "@koa/cors": "^4.0.0",
+    "koa": "^2.14.2",
+    "koa-body": "^6.0.1",
+    "koa-router": "^12.0.0",
+    "pm2": "^5.3.0",
+    "uuid": "^9.0.1",
+    "ws": "^8.14.2"
+  }
+}
